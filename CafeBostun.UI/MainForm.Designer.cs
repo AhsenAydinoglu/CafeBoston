@@ -98,6 +98,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "CafeBoston";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.msTop.ResumeLayout(false);
             this.msTop.PerformLayout();
             this.ResumeLayout(false);
