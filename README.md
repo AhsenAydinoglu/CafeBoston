@@ -1,5 +1,7 @@
+Create a class library project named CafeBoston.
+DATA and create 4 classes and 1 enum as descirbed below.
 
-Create a class library project named CafeBoston.DATA and create 4 classes and 1 enum as described below.
+
 
 Product
 * ProductName: string
@@ -32,3 +34,5 @@ CafeData
 * PastOrders: List<Order>
 
 
+* Property
+- Method

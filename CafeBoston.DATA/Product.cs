@@ -8,14 +8,11 @@ namespace CafeBoston.DATA
 {
     public class Product
     {
-
-        public int ProductName { get; set; }
+        public string ProductName { get; set; }
         public decimal UnitPrice { get; set; }
-
-       public override string ToString()
+        public override string ToString()
         {
-            return $"{ ProductName} ({ UnitPrice:c2})";
-
+            return $"{ProductName} ({UnitPrice:c2})";
         }
     }
 }

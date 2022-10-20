@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CafeBoston.UI
+namespace CafeBostun.UI
 {
     public partial class ProductForm : Form
     {

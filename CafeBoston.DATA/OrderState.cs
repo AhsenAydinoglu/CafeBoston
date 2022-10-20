@@ -8,7 +8,7 @@ namespace CafeBoston.DATA
 {
     public enum OrderState
     {
-        Active = 0,
+        Active=0,
         Paid=1,
         Canceled=2
     }

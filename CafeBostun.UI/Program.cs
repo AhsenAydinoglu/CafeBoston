@@ -1,4 +1,4 @@
-namespace CafeBoston.UI
+namespace CafeBostun.UI
 {
     internal static class Program
     {

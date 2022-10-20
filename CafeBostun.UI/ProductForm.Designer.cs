@@ -1,4 +1,4 @@
-﻿namespace CafeBoston.UI
+﻿namespace CafeBostun.UI
 {
     partial class ProductForm
     {
@@ -28,49 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.txtProducts = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
+            this.lblUnitPrice = new System.Windows.Forms.Label();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.txtProductName = new System.Windows.Forms.TextBox();
             this.nudUnitPrice = new System.Windows.Forms.NumericUpDown();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudUnitPrice)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(470, 49);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(151, 29);
-            this.btnAdd.TabIndex = 12;
-            this.btnAdd.Text = "ADD";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            // 
-            // txtProducts
-            // 
-            this.txtProducts.Location = new System.Drawing.Point(16, 49);
-            this.txtProducts.Name = "txtProducts";
-            this.txtProducts.Size = new System.Drawing.Size(204, 29);
-            this.txtProducts.TabIndex = 11;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(231, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 21);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Unit Price ₺";
-            // 
             // lblProductName
             // 
-            this.lblProductName.AutoSize = true;
-            this.lblProductName.Location = new System.Drawing.Point(16, 25);
+            this.lblProductName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblProductName.Location = new System.Drawing.Point(12, 0);
             this.lblProductName.Name = "lblProductName";
-            this.lblProductName.Size = new System.Drawing.Size(110, 21);
-            this.lblProductName.TabIndex = 8;
+            this.lblProductName.Size = new System.Drawing.Size(177, 32);
+            this.lblProductName.TabIndex = 0;
             this.lblProductName.Text = "Product Name";
+            this.lblProductName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblUnitPrice
+            // 
+            this.lblUnitPrice.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUnitPrice.Location = new System.Drawing.Point(206, 0);
+            this.lblUnitPrice.Name = "lblUnitPrice";
+            this.lblUnitPrice.Size = new System.Drawing.Size(145, 32);
+            this.lblUnitPrice.TabIndex = 1;
+            this.lblUnitPrice.Text = "Unit Price(₺)";
+            this.lblUnitPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgvProducts
             // 
@@ -78,39 +64,53 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProducts.Location = new System.Drawing.Point(13, 92);
+            this.dgvProducts.Location = new System.Drawing.Point(12, 68);
             this.dgvProducts.Name = "dgvProducts";
-            this.dgvProducts.RowTemplate.Height = 25;
-            this.dgvProducts.Size = new System.Drawing.Size(771, 500);
-            this.dgvProducts.TabIndex = 7;
+            this.dgvProducts.RowHeadersWidth = 51;
+            this.dgvProducts.RowTemplate.Height = 29;
+            this.dgvProducts.Size = new System.Drawing.Size(727, 389);
+            this.dgvProducts.TabIndex = 2;
+            // 
+            // txtProductName
+            // 
+            this.txtProductName.Location = new System.Drawing.Point(12, 35);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(188, 27);
+            this.txtProductName.TabIndex = 3;
             // 
             // nudUnitPrice
             // 
             this.nudUnitPrice.DecimalPlaces = 2;
-            this.nudUnitPrice.Location = new System.Drawing.Point(231, 49);
-            this.nudUnitPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.nudUnitPrice.Location = new System.Drawing.Point(206, 35);
             this.nudUnitPrice.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.nudUnitPrice.Name = "nudUnitPrice";
-            this.nudUnitPrice.Size = new System.Drawing.Size(232, 29);
-            this.nudUnitPrice.TabIndex = 13;
+            this.nudUnitPrice.Size = new System.Drawing.Size(164, 27);
+            this.nudUnitPrice.TabIndex = 4;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(376, 33);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(94, 29);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.Text = "ADD";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // ProductForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 614);
-            this.Controls.Add(this.nudUnitPrice);
+            this.ClientSize = new System.Drawing.Size(751, 469);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtProducts);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblProductName);
+            this.Controls.Add(this.nudUnitPrice);
+            this.Controls.Add(this.txtProductName);
             this.Controls.Add(this.dgvProducts);
-            this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Controls.Add(this.lblUnitPrice);
+            this.Controls.Add(this.lblProductName);
             this.Name = "ProductForm";
             this.Text = "Products";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
@@ -121,11 +121,12 @@
         }
 
         #endregion
-        private Button btnAdd;
-        private TextBox txtProducts;
-        private Label label2;
+
         private Label lblProductName;
+        private Label lblUnitPrice;
         private DataGridView dgvProducts;
+        private TextBox txtProductName;
         private NumericUpDown nudUnitPrice;
+        private Button btnAdd;
     }
 }
