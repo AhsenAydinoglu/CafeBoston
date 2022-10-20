@@ -46,7 +46,8 @@
             this.tsmiOrderHistory});
             this.msTop.Location = new System.Drawing.Point(0, 0);
             this.msTop.Name = "msTop";
-            this.msTop.Size = new System.Drawing.Size(791, 28);
+            this.msTop.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.msTop.Size = new System.Drawing.Size(692, 24);
             this.msTop.TabIndex = 3;
             this.msTop.Text = "menuStrip1";
             this.msTop.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -54,13 +55,14 @@
             // tsmiProducts
             // 
             this.tsmiProducts.Name = "tsmiProducts";
-            this.tsmiProducts.Size = new System.Drawing.Size(80, 24);
+            this.tsmiProducts.Size = new System.Drawing.Size(66, 20);
             this.tsmiProducts.Text = "Products";
+            this.tsmiProducts.Click += new System.EventHandler(this.tsmiProducts_Click);
             // 
             // tsmiOrderHistory
             // 
             this.tsmiOrderHistory.Name = "tsmiOrderHistory";
-            this.tsmiOrderHistory.Size = new System.Drawing.Size(112, 24);
+            this.tsmiOrderHistory.Size = new System.Drawing.Size(90, 20);
             this.tsmiOrderHistory.Text = "Order History";
             this.tsmiOrderHistory.Click += new System.EventHandler(this.tsmiOrderHistory_Click);
             // 
@@ -68,9 +70,10 @@
             // 
             this.lvwTables.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lvwTables.LargeImageList = this.imlTables;
-            this.lvwTables.Location = new System.Drawing.Point(0, 28);
+            this.lvwTables.Location = new System.Drawing.Point(0, 24);
+            this.lvwTables.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lvwTables.Name = "lvwTables";
-            this.lvwTables.Size = new System.Drawing.Size(791, 459);
+            this.lvwTables.Size = new System.Drawing.Size(692, 341);
             this.lvwTables.TabIndex = 4;
             this.lvwTables.UseCompatibleStateImageBehavior = false;
             this.lvwTables.SelectedIndexChanged += new System.EventHandler(this.lvwTables_SelectedIndexChanged);
@@ -86,12 +89,13 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 487);
+            this.ClientSize = new System.Drawing.Size(692, 365);
             this.Controls.Add(this.lvwTables);
             this.Controls.Add(this.msTop);
             this.MainMenuStrip = this.msTop;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "CafeBoston";
             this.msTop.ResumeLayout(false);
